@@ -27,6 +27,7 @@
                             &kp LCTRL &mo 1     &kp SPACE    &kp RET &mo 1 &kp RCTRL
                         >;
                 };
+
                 numnav_layer {
                         label = "NUMNAV";
 // -----------------------------------------------------------------------------------------
@@ -35,10 +36,10 @@
 // |     | ESC  | CUT    | COPY | PASTE | TAB   |   | 0    |  1  |  2   |  3  | VOL- |     |
 //                       |      |     |       |   |      |     |      |
                         bindings = <
-   &trans   &kp PG_UP &kp BSPC     &kp UP       &kp DEL      &kp PG_DN    &kp C_NEXT       &kp N7 &kp N8 &kp N9 &kp C_MUTE   &trans
-   &kp LWIN &kp HOME  &kp LEFT     &kp DOWN     &kp RIGHT    &kp END      &kp C_PLAY_PAUSE &kp N4 &kp N5 &kp N6 &kp C_VOL_UP &kp RWIN
-   &trans   &kp ESC   &kp LCTRL(X) &kp LCTRL(C) &kp LCTRL(V) &kp INS      &kp N0           &kp N1 &kp N2 &kp N3 &kp C_VOL_DN &trans
-                                   &trans       &trans       &trans       &trans           &trans &trans
+   &trans   &kp PG_UP &kp BSPC  &kp UP    &kp DEL   &kp PG_DN    &kp C_NEXT       &kp N7 &kp N8 &kp N9 &kp C_MUTE   &trans
+   &kp LWIN &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT &kp END      &kp C_PLAY_PAUSE &kp N4 &kp N5 &kp N6 &kp C_VOL_UP &kp RWIN
+   &trans   &kp ESC   &kp LC(X) &kp LC(C) &kp LC(V) &kp INS      &kp N0           &kp N1 &kp N2 &kp N3 &kp C_VOL_DN &trans
+                                &trans    &trans    &trans       &trans           &trans &trans
                         >;
                 };
 
@@ -60,15 +61,15 @@
                 umlaut_layer {
                         label = "UMLAUT";
 // -----------------------------------------------------------------------------------------
-// |    |     |  Ö  |     |     |    |   |    |    |    |    |    |    |
-// |    |  Ä  |     |     |  Ü  |    |   |    |    |    |    |    |    |
-// |    |     |     |     |     |    |   |    |    |    |    |    |    |
-//                  |     |     |    |   |    |    |    |
+// |    |     |     |  Ö  |     |     |   |    |    |    |    |    |    |
+// |    |     |  Ä  |     |     |  Ü  |   |    |    |    |    |    |    |
+// |    |     |     |     |     |     |   |    |    |    |    |    |    |
+//                  |     |     |     |   |    |    |    |
                         bindings = <
-   &trans &trans      &kp KC_SCLN &trans &trans      &trans &trans &trans &trans &trans &trans &trans
-   &trans &kp KC_QUOT &trans      &trans &kp KC_LBRC &trans &trans &trans &trans &trans &trans &trans
-   &trans &trans      &trans      &trans &trans      &trans &trans &trans &trans &trans &trans &trans
-                        &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans      &kp KC_SCLN &trans &trans      &trans &trans &trans &trans &trans &trans
+   &trans &trans &kp KC_QUOT &trans      &trans &kp KC_LBRC &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans      &trans      &trans &trans      &trans &trans &trans &trans &trans &trans
+                             &trans      &trans &trans      &trans &trans &trans
                         >;
                 };
         };
