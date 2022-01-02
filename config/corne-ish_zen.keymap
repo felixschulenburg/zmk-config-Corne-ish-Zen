@@ -21,7 +21,7 @@
 // | SHFT |     |  Q  |  X   |  F  |  Z  |   |  B  |  P   |  W   |  M  |  J  | SHFT |
 //                    | CTRL | MO1 | SPC |   | RET | MO1  | CTRL |
                         bindings = <
-   &kp LALT  &kp K  &kp DOT &kp O     &kp COMMA &kp Z        &kp V   &kp G &kp C     &kp L &kp KC_MINUS &kp RALT
+   &kp LALT  &kp K  &kp DOT &kp O     &kp COMMA &kp Z        &kp V   &kp G &kp C     &kp L &kp KP_MINUS &kp RALT
    &mo 2     &kp H  &kp A   &kp E     &kp I     &kp U        &kp D   &kp T &kp R     &kp N &kp S        &mo 2
    &kp LSHFT &sl 3  &kp Q   &kp X     &kp F     &kp Y        &kp B   &kp P &kp W     &kp M &kp J        &kp RSHFT
                             &kp LCTRL &mo 1     &kp SPACE    &kp RET &mo 1 &kp RCTRL
@@ -34,7 +34,7 @@
 // |     | PGUP | BCKSPC | UP   | DLT   | PGDWN |   | NEXT |  7  |  8   |  9  | MUTE |     |
 // | WIN | HOME | LFT    | DWN  | RGT   | END   |   | PLAY |  4  |  5   |  6  | VOL+ | WIN |
 // |     | ESC  | CUT    | COPY | PASTE | TAB   |   | 0    |  1  |  2   |  3  | VOL- |     |
-//                       |      |     |       |   |      |     |      |
+//                       |      |       |       |   |      |     |      |
                         bindings = <
    &trans   &kp PG_UP &kp BSPC  &kp UP    &kp DEL   &kp PG_DN    &kp C_NEXT       &kp N7 &kp N8 &kp N9 &kp C_MUTE   &trans
    &kp LWIN &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT &kp END      &kp C_PLAY_PAUSE &kp N4 &kp N5 &kp N6 &kp C_VOL_UP &kp RWIN
@@ -66,8 +66,8 @@
 // |    |     |     |     |     |     |   |    |    |    |    |    |    |
 //                  |     |     |     |   |    |    |    |
                         bindings = <
-   &trans &trans &trans      &kp KC_SCLN &trans &trans      &trans &trans &trans &trans &trans &trans
-   &trans &trans &kp KC_QUOT &trans      &trans &kp KC_LBRC &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans      &kp SEMI    &trans &trans      &trans &trans &trans &trans &trans &trans
+   &trans &trans &kp DQT     &trans      &trans &kp LBRC    &trans &trans &trans &trans &trans &trans
    &trans &trans &trans      &trans      &trans &trans      &trans &trans &trans &trans &trans &trans
                              &trans      &trans &trans      &trans &trans &trans
                         >;
