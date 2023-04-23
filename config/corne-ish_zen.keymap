@@ -72,5 +72,20 @@
                              &trans      &trans &trans      &trans &trans &trans
                         >;
                 };
+
+                function_layer {
+                        label = "FUNCTN";
+// -----------------------------------------------------------------------------------------
+// |    |     |     |     |     |     |   |    |    |    |    |    |    |
+// |    |     |     |     |     |     |   |    |    |    |    |    |    |
+// |    |     |     |     |     |     |   |    |    |    |    |    |    |
+//                  |     |     |     |   |    |    |    |
+                        bindings = <
+   &trans &trans &trans      &kp SEMI    &trans &trans      &trans &trans &trans &trans &trans &trans
+   &trans &trans &kp SQT     &trans      &trans &kp LBKT    &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans      &trans      &trans &trans      &trans &trans &trans &trans &trans &trans
+                             &trans      &trans &trans      &trans &trans &trans
+                        >;
+                };
         };
 };
